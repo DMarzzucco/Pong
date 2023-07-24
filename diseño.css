@@ -1,0 +1,81 @@
+body, html{
+  background-color: rgb(73, 105, 211);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.encabezado-principal .logo{
+  background: linear-gradient(to top, rgb(80 128 173 0), rgb(3 31 53 0.719));
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.encabezado-principal h1{
+  padding: 0 80px;
+  text-align: center;
+  font-size: 82px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+}
+.encabezado-principal h2{
+  padding: 0 20px;
+  text-align: right;
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0b063348;
+}
+#game-container {
+  width: 800px;
+  height: 400px;
+  background-color: #1c8129;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.paddle {
+  width: 10px;
+  height: 80px;
+  background-color: #000;
+  position: absolute;
+}
+
+#paddle-left {
+  background-color: #dd8d14fd;
+  left: 10px;
+  top: 160px;
+  border:2px solid #31200554;
+  border-radius: 10px;
+}
+
+#paddle-right {
+  background-color: rgb(144, 33, 218);
+  right: 10px;
+  top: 160px;
+  border: 2px solid  rgba(46, 11, 70, 0.411);
+  border-radius: 10px;
+}
+
+.ball {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(84, 84, 87, 0.178);
+  border-radius: 50%;
+  position: absolute;
+}
+#ball .fa-solid.fa-volleyball{
+  font-size: 30px;
+  color: rgb(192, 168, 142);
+}
+#linea {
+  width: 800px;
+  border-right: #063324 dashed 0.70px;
+  height: 400px;
+  position: absolute;
+  
+  transform: translateX(-50%);
+}
